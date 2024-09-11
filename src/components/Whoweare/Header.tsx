@@ -11,7 +11,7 @@ export const HeaderSectionWhoweAre = () => {
       )}
     >
       <h2 className={clsx("font-semibold text-[16px] font-roboto")}>
-        {whoweareDetails.title}
+        {whoweareDetails.title.toUpperCase()}
       </h2>
       <h3
         className={clsx(
