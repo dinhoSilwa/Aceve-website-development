@@ -18,7 +18,7 @@ interface ImenuHeader extends ComponentProps<"nav"> {
   options?: string[];
 }
 
-const headerDetails: ImenuHeader = {
+const headerTexts: ImenuHeader = {
   logo: "https://files.edgestore.dev/nh2rz4kiwkl7w411/publicImages/_public/post/8ec4791d-e61a-4e48-abb1-bcc54d343bbd.png",
   logoSimios:
     "https://files.edgestore.dev/nh2rz4kiwkl7w411/publicImages/_public/post/8487ce9f-664c-4a4d-a8de-287508c9996d.png",
@@ -47,16 +47,16 @@ export default function Mainmenu({
       >
         <Logo
           headerDetails={{
-            logo: headerDetails.logo,
-            description: headerDetails.description,
+            logo: headerTexts.logo,
+            description: headerTexts.description,
           }}
         />
         <OngDescription
-          headerDetails={{ description: headerDetails.description }}
+          headerDetails={{ description: headerTexts.description }}
         />
         <ToggleMenu />
       </header>
-      <ItemsList headerDetails={{ logoSimios: headerDetails.logoSimios }} />
+      <ItemsList headerDetails={{ logoSimios: headerTexts.logoSimios }} />
     </nav>
   );
 }
