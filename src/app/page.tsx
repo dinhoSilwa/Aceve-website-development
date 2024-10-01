@@ -1,3 +1,4 @@
+import { Areasofactivity } from "@/components/Areasofactivity/Areasofactivity";
 import BannerHero from "@/components/Banner/mainbanner";
 import { Whoweare } from "@/components/Whoweare/whoweare";
 import { bannerDetails } from "@/model/bannerdetailsModel";
@@ -11,6 +12,8 @@ export default function Home() {
         bannerImg={bannerDetails.bannerImg}
       />
       <Whoweare />
+      <Areasofactivity />
+      <div className="h-screen flex flex-col items-center">teste</div>
     </main>
   );
 }
